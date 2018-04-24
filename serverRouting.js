@@ -27,6 +27,9 @@ var page = "";
         case "/favCSS":
             page = "/favCSS.html";
         break;
+        // default:
+        //     display404();
+        //     break;
         }
     fs.readFile(__dirname + page, function(err, data){
         res.writeHead(200, {"Content-Type": "text/html"});
